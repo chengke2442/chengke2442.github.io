@@ -1,4 +1,19 @@
 .background{
     background-color: #87CEFA;
 }
+p{
+    color:aqua;
+}
+h2{
+    margin-top:30px;
 
+}
+.cartoonprofile{
+    background-image: url("profile.png");
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    background-size: 200px,200px;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
