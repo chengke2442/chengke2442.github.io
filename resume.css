@@ -1,19 +1,79 @@
-.background{
-    background-color: #87CEFA;
+* {
+  margin: 0;
+  padding: 0;
 }
-p{
-    color:aqua;
-}
-h2{
-    margin-top:30px;
 
-}
-.cartoonprofile{
-    background-image: url("profile.png");
-    width:200px;
-    height:200px;
-    border-radius: 100px;
-    background-size: 200px,200px;
+.background {
+  /*background-image: url("IMG_6932.png");
     background-repeat: no-repeat;
-    margin:0 auto;
+    background-size: 1000px, 1000px;*/
+  background: linear-gradient(to bottom, #abdcff, #0396ff);
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* navigation bar */
+.navigation {
+  height: 80px;
+  background-color: white;
+  margin-bottom: 100px;
+  line-height: 80px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  text-align: center;
+}
+
+.navigation ul li {
+  width: 16%;
+  color: gray;
+}
+
+.navigation ul li:hover {
+  width: 16%;
+  color: #87cefa;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* profile css */
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  padding: 20px;
+}
+
+.middle {
+  border-left: 1px solid gray;
+}
+
+.cartoonprofile {
+  background-image: url("profile.png");
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: 200px, 200px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.humanprofile {
+  background-image: url("IMG_4697.png");
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: 300px, 150px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+/* introduction css */
+.introduction {
+  margin-left: 15%;
 }
