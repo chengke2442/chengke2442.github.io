@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
 }
-
-.background {
-  /*background-image: url("IMG_6932.png");
-    background-repeat: no-repeat;
-    background-size: 1000px, 1000px;*/
-  background: linear-gradient(to bottom, #abdcff, #0396ff);
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: -1;
 }
 
 h2 {
@@ -20,13 +20,14 @@ h2 {
   background-color: white;
   margin-bottom: 100px;
   line-height: 80px;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 5px 1px #dee2e6;
 }
 
 .navigation ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-
   text-align: center;
 }
 
@@ -37,16 +38,22 @@ h2 {
 
 .navigation ul li:hover {
   width: 16%;
-  color: #87cefa;
+  color: #1971c2;
   font-weight: bold;
   text-decoration: underline;
 }
 
+.wholepage {
+  width: 100%;
+  height: 80%;
+}
 /* profile css */
 .profile {
   display: grid;
-  grid-template-columns: 1fr 10px 1fr;
+  grid-template-columns: 2fr 1fr;
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .middle {
@@ -54,7 +61,7 @@ h2 {
 }
 
 .cartoonprofile {
-  background-image: url("profile.png");
+  background-image: url("images/profile.png");
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -64,16 +71,113 @@ h2 {
 }
 
 .humanprofile {
-  background-image: url("IMG_4697.png");
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  background-size: 300px, 150px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 /* introduction css */
-.introduction {
+
+subHead {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+exp,
+proj,
+skills,
+hobbies {
+  width: 70%;
   margin-left: 15%;
+  display: grid;
+  margin-bottom: 100px;
+}
+
+/* Projects css */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 40px 40px;
+}
+.photo {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.image1 {
+  background-size: 200px, 150px;
+  background-image: url("images/ups.jpeg");
+}
+
+.image2 {
+  background-size: 200px, 150px;
+  background-image: url("images/stock.jpeg");
+}
+
+.image3 {
+  background-size: 200px, 150px;
+  background-image: url("images/proxy.jpeg");
+}
+
+.image4 {
+  background-size: 200px, 150px;
+  background-image: url("images/vr.jpeg");
+}
+
+.projects a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.projectCard {
+  border-radius: 10px;
+  display: flex;
+}
+.projectDescription {
+  padding: 20px;
+}
+
+.color1 {
+  background-color: #a5d8ff;
+}
+
+.color2 {
+  background-color: #74c0fc;
+}
+
+.color3 {
+  background-color: #4dabf7;
+}
+
+.color4 {
+  background-color: #339af0;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+/*skills css*/
+.skillsflex {
+  display: flex;
+}
+
+.skillsBox {
+  padding: 20px;
+}
+
+.skillsBox h3 {
+  line-height: 2;
+}
+
+.coulddo-icon {
+  width: 32px;
+  height: 32px;
+  color: #1971c2;
+  text-align: center;
 }
