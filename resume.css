@@ -127,16 +127,23 @@ hobbies {
   background-image: url("images/vr.jpeg");
 }
 
+.image5 {
+  background-size: 200px, 150px;
+  background-image: url("images/engine.jpeg");
+}
+
 .projects a {
   text-decoration: none;
   color: black;
   font-size: 16px;
+  font-weight: 900;
 }
 
 .projectCard {
   border-radius: 10px;
   display: flex;
 }
+
 .projectDescription {
   padding: 20px;
 }
@@ -159,7 +166,7 @@ hobbies {
 
 .mainContent {
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
 }
 
 /*skills css*/
@@ -168,7 +175,7 @@ hobbies {
 }
 
 .skillsBox {
-  padding: 20px;
+  padding-right: 40px;
 }
 
 .skillsBox h3 {
@@ -180,4 +187,18 @@ hobbies {
   height: 32px;
   color: #1971c2;
   text-align: center;
+}
+
+/* hobbies css */
+.flexLike {
+  display: flex;
+}
+
+.likes {
+  padding-right: 40px;
+}
+
+.likeImage {
+  height: 150px;
+  width: 200px;
 }
