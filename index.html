@@ -1,20 +1,28 @@
 <head>
   <link rel="stylesheet" type="text/css" href="resume.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather&display=swap"
+    rel="stylesheet"
+  />
+  <link type="text/javascript" href="resume.js" />
 </head>
 <body class="background">
   <!-- Navigation bar -->
   <nav class="navigation">
     <ul>
-      <li>Profile</li>
+      <li><a href="#profile">Profile</a></li>
       <!-- <li>Experience</li>-->
-      <li>Projects</li>
-      <li>Skills</li>
-      <li>Hobbies</li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
     </ul>
   </nav>
 
   <div class="wholepage">
-    <profile class="profile">
+    <profile class="profile" id="profile">
       <div class="introduction">
         <h2>Hello! I am</h2>
         <h1>Chengke (Candy) Tang</h1>
@@ -37,7 +45,7 @@
       <div>Software Engineer Intern</div>
     </exp>-->
 
-    <proj>
+    <proj id="projects">
       <subHead>What I did</subHead>
       <div class="projects">
         <div class="projectCard color1">
@@ -62,7 +70,6 @@
             <a href="https://github.com/chengke2442/proxy-server"
               >Http Proxy Server</a
             >
-            <p>A simulated-delivery company full-stack application</p>
           </div>
         </div>
         <div class="projectCard color4">
@@ -74,7 +81,7 @@
             >
           </div>
         </div>
-        <div class="projectCard color1">
+        <!-- <div class="projectCard color1">
           <div class="photo image5"></div>
           <div class="projectDescription">
             <a
@@ -82,11 +89,35 @@
               >Game Engine - GoGuma</a
             >
           </div>
-        </div>
+        </div>-->
       </div>
     </proj>
 
-    <skills>
+    <design id="design">
+      <subHead>What I Designed</subHead>
+      <div class="design">
+        <div class="projectCard color1">
+          <div class="photo image1"></div>
+          <div class="projectDescription">
+            <a
+              href="https://www.figma.com/file/1uAy7eZEuEbufLky8oMhyY/ride-web?node-id=0%3A1&t=c67ywgfph2MlrNmA-1"
+              >Ride Sharing Application Interface Design</a
+            >
+          </div>
+        </div>
+        <div class="projectCard color1">
+          <div class="photo image2"></div>
+          <div class="projectDescription">
+            <a
+              href="https://www.figma.com/file/VEBo7CkKfFH3yTzOmFA78z/iPhone-11-Mockup-(Copy)?t=c67ywgfph2MlrNmA-1"
+              >Mobile Application for Becteria Detection</a
+            >
+          </div>
+        </div>
+      </div>
+    </design>
+
+    <skills id="skills">
       <subHead>What I Could Do</subHead>
       <div class="skillsflex">
         <div class="skillsBox">
@@ -130,23 +161,23 @@
       </div>
     </skills>
 
-    <hobbies>
+    <hobbies id="hobbies">
       <subHead>What I Like</subHead>
       <div class="flexLike">
         <div class="likes">
           <img src="images/book.jpeg" alt="books" class="likeImage" />
-          <h3>I like reading Novels : )</h3>
+          <p>I like reading novels : )</p>
         </div>
         <div class="likes">
           <img src="images/paint.jpeg" alt="paint" class="likeImage" />
-          <h3>I like drawing manga and created my own stories</h3>
+          <p>I like drawing manga and creating my own stories</p>
         </div>
         <div class="likes">
           <img src="images/leagues.jpeg" alt="videoGame" class="likeImage" />
-          <h3>
+          <p>
             I like playing League of legends and games on Steam. My favorite
-            game is Life is Strange. * _ *
-          </h3>
+            game is Life is Strange.
+          </p>
         </div>
       </div>
     </hobbies>

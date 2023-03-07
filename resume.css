@@ -1,17 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  letter-spacing: -1;
+  font-family: "Merriweather", serif, Times, "Times New Roman";
 }
 
 h2 {
   margin-top: 30px;
+}
+
+.background {
+  background: linear-gradient(to bottom right, #abdcff, #0396ff);
 }
 
 /* navigation bar */
@@ -22,6 +20,10 @@ h2 {
   line-height: 80px;
   border-bottom: 1px solid #dee2e6;
   box-shadow: 5px 1px #dee2e6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navigation ul {
@@ -34,6 +36,11 @@ h2 {
 .navigation ul li {
   width: 16%;
   color: gray;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #495057;
 }
 
 .navigation ul li:hover {
@@ -52,8 +59,9 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 200px;
 }
 
 .middle {
@@ -80,17 +88,23 @@ h2 {
 subHead {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  display: block;
 }
 
 exp,
 proj,
 skills,
-hobbies {
+hobbies,
+design {
   width: 70%;
-  margin-left: 15%;
-  display: grid;
+  display: block;
+  /*display: grid;*/
   margin-bottom: 100px;
+  background-color: aliceblue;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Projects css */
@@ -132,7 +146,8 @@ hobbies {
   background-image: url("images/engine.jpeg");
 }
 
-.projects a {
+.projects a,
+design a {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -165,13 +180,24 @@ hobbies {
 }
 
 .mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*design css */
+.design {
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-gap: 40px 40px;
 }
 
 /*skills css*/
 .skillsflex {
   display: flex;
+  justify-content: space-around;
 }
 
 .skillsBox {
@@ -179,7 +205,12 @@ hobbies {
 }
 
 .skillsBox h3 {
-  line-height: 2;
+  line-height: 4;
+}
+
+.skillsBox p {
+  color: #495057;
+  line-height: 30px;
 }
 
 .coulddo-icon {
@@ -192,13 +223,20 @@ hobbies {
 /* hobbies css */
 .flexLike {
   display: flex;
+  justify-content: space-around;
 }
 
 .likes {
   padding-right: 40px;
+  width: 240px;
 }
 
 .likeImage {
   height: 150px;
   width: 200px;
+  margin-bottom: 20px;
+}
+
+.hobbies p {
+  color: #495057;
 }
